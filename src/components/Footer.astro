@@ -1,14 +1,17 @@
 ---
-const platforms = ["github", "instagram"];
-const username = "eliasricano";
+import Social from "./Social.astro"
 ---
 
 <footer>
-    <!-- {
-        for (let item of platforms) {
-            <p>Learn more about my projects on 
-                <a href="{`https://www.${item}.com/${username}`}">Hi</a>!
-            </p>
-        }
-    } -->
+    <Social platform="github" username="eliasricano" />
+    <Social platform="x" username="eliasricano" />
+    <Social platform="instagram" username="eliasricano" />
 </footer>
+
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
